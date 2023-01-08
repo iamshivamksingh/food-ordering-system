@@ -7,19 +7,19 @@ import com.food.ordering.system.domain.valueobject.ProductId;
 public class Product extends BaseEntity<ProductId> {
 
     private String name;
-    private Money money;
+    private Money price;
 
-    public Product(ProductId productId, final String name, final Money money) {
+    public Product(ProductId productId, final String name, final Money price) {
         super.setId(productId);
         this.name = name;
-        this.money = money;
+        this.price = price;
     }
 
     public String getName() {
         return name;
     }
 
-    public Money getMoney() {
-        return money;
+    public Money getPrice() {
+        return price;
     }
 }
